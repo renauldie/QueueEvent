@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.eventflow</groupId>
+    <groupId>com.renauldiedev</groupId>
     <artifactId>eventflow</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -20,7 +20,8 @@
 
     <modules>
         <module>api-gateway</module>
-        <module>ticket-queue-service</module>
+        <module>event-service</module>
+        <module>user-service</module>
     </modules>
 
     <properties>
@@ -73,4 +74,21 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                    <configuration>
+                        <source>21</source>
+                        <target>21</target>
+                        <parameters>true</parameters>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
