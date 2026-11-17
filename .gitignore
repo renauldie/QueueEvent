@@ -1,18 +1,31 @@
-# Artefact
-/target/
+# Compiled class files & build artifacts
+target/
 **/target/
 !.mvn/wrapper/maven-wrapper.jar
 
-# IDE
-/.idea/
-/*.iml
+# IDE & Editor files
+.idea/
+*.iml
+*.iws
+.vscode/
 *.classpath
 *.project
 *.settings/
 
-# OS File
+# macOS system files
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+._*
 
-# ENV Variable
+# Environment & credentials
 .env
+*.local.env
+
+# Logs
+*.log
+logs/
+
+# Tools & skills
+skills/
